@@ -21,7 +21,7 @@
             const query = document.getElementById('search').value;
             if (!query) return alert("Please enter an ingredient");
             
-            const apiKey = "20e8d773027b4b1b9cd8f47f2f39db49";  
+            const apiKey = "626bf0400ac840f4a9ecd80b95f09f15";  
             const url = `https://api.spoonacular.com/recipes/complexSearch?query=${query}&number=5&apiKey=${apiKey}`;
             
             try {
@@ -56,7 +56,7 @@
         }
 
         async function showRecipeDetails(recipeId) {
-            const apiKey = "20e8d773027b4b1b9cd8f47f2f39db49";
+            const apiKey = "626bf0400ac840f4a9ecd80b95f09f15";
             const url = `https://api.spoonacular.com/recipes/${recipeId}/information?apiKey=${apiKey}`;
             
             try {
